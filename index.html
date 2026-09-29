@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La Botanique | Event Management & Decoration</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         FIRST PAGE / HERO
+    ================================== -->
+
+    <header class="hero" id="home">
+
+
+        <!-- Background Video -->
+
+        <video
+            class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+        >
+
+            <source src="images/hero-video.mp4" type="video/mp4">
+
+            Your browser does not support video.
+
+        </video>
+
+
+        <!-- Dark Overlay -->
+
+        <div class="video-overlay"></div>
+
+
+        <!-- =================================
+             NAVIGATION
+        ================================== -->
+
+        <nav class="navbar">
+
+            <div class="nav-links">
+
+                <a href="#about">About</a>
+
+                <a href="#categories">Our Work</a>
+
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- =================================
+             BRANDING
+        ================================== -->
+
+        <div class="brand">
+
+            <div class="logo">
+
+                LA BOTANIQUE
+
+            </div>
+
+            <div class="brand-subtitle">
+
+                EVENT MANAGEMENT & DECORATION
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================
+             HERO CONTENT
+        ================================== -->
+
+        <div class="hero-content">
+
+            <h1>
+
+                Where Moments<br>
+                Become Memories
+
+            </h1>
+
+            <p class="hero-description">
+
+                Creating elegant spaces and unforgettable
+                experiences for your special moments.
+
+            </p>
+
+            <a href="#about" class="hero-button">
+
+                EXPLORE
+
+            </a>
+
+        </div>
+
+
+        <!-- =================================
+             SCROLL INDICATOR
+        ================================== -->
+
+        <a href="#about" class="scroll-indicator">
+
+            <span>SCROLL DOWN</span>
+
+            <div class="scroll-line"></div>
+
+        </a>
+
+
+    </header>
+
+
+
+    <!-- =================================
+         ABOUT SECTION
+    ================================== -->
+
+    <section id="about" class="about-section">
+
+
+        <div class="section-label">
+
+            WHO WE ARE
+
+        </div>
+
+
+        <h2>
+
+            We create spaces<br>
+            that tell a story.
+
+        </h2>
+
+
+        <p>
+
+            La Botanique is an event management and decoration
+            company dedicated to transforming celebrations into
+            beautiful and memorable experiences.
+
+        </p>
+
+
+        <p>
+
+            From elegant wedding stages to vibrant traditional
+            celebrations, we create every detail with creativity,
+            passion and attention to detail.
+
+        </p>
+
+
+    </section>
+
+
+
+    <!-- =================================
+         OUR WORK / CATEGORIES
+    ================================== -->
+
+    <section id="categories" class="categories-section">
+
+
+        <div class="section-label">
+
+            OUR WORK
+
+        </div>
+
+
+        <h2>
+
+            Explore Our<br>
+            Decorations
+
+        </h2>
+
+
+        <div class="category-grid">
+
+
+            <!-- =================================
+                 MANDAPAM
+            ================================== -->
+
+            <div
+                class="category-card"
+                onclick="openGallery('mandapam')"
+            >
+
+                <div
+                    class="category-image"
+                    style="background-image: url('images/mandapam/mandapam-1.jpg');"
+                >
+
+                    <span>MANDAPAM</span>
+
+                </div>
+
+                <div class="category-name">
+
+                    Mandapam Stage
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 RECEPTION
+            ================================== -->
+
+            <div
+                class="category-card"
+                onclick="openGallery('reception')"
+            >
+
+                <div
+                    class="category-image"
+                    style="background-image: url('images/reception/reception-1.jpg');"
+                >
+
+                    <span>RECEPTION</span>
+
+                </div>
+
+                <div class="category-name">
+
+                    Reception Stage
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 HALDI
+            ================================== -->
+
+            <div
+                class="category-card"
+                onclick="openGallery('haldi')"
+            >
+
+                <div
+                    class="category-image"
+                    style="background-image: url('images/haldi/haldi-1.jpg');"
+                >
+
+                    <span>HALDI</span>
+
+                </div>
+
+                <div class="category-name">
+
+                    Haldi Stage
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 VALAKAPPU
+            ================================== -->
+
+            <div
+                class="category-card"
+                onclick="openGallery('valakkapu')"
+            >
+
+                <div
+                    class="category-image"
+                    style="background-image: url('images/valakkapu/valakkapu-1.jpg');"
+                >
+
+                    <span>VALAKKAPU</span>
+
+                </div>
+
+                <div class="category-name">
+
+                    Valakkapu Stage
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================
+         GALLERY POPUP
+    ================================== -->
+
+    <div id="gallery-modal" class="gallery-modal">
+
+
+        <div class="gallery-container">
+
+
+            <!-- Close Button -->
+
+            <button
+                class="gallery-close"
+                onclick="closeGallery()"
+                aria-label="Close gallery"
+            >
+
+                &times;
+
+            </button>
+
+
+            <!-- Gallery Title -->
+
+            <div class="gallery-header">
+
+                <div class="section-label">
+
+                    LA BOTANIQUE
+
+                </div>
+
+                <h2 id="gallery-title">
+
+                    Mandapam
+
+                </h2>
+
+            </div>
+
+
+            <!-- Gallery Images -->
+
+            <div
+                id="gallery-grid"
+                class="gallery-grid"
+            >
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =================================
+         CONTACT SECTION
+    ================================== -->
+
+    <section id="contact" class="contact-section">
+
+
+        <div class="section-label">
+
+            LET'S CREATE
+
+        </div>
+
+
+        <h2>
+
+            Your moment.<br>
+            Our creativity.
+
+        </h2>
+
+
+        <p>
+
+            Let's create something beautiful together.
+
+        </p>
+
+
+        <!-- SOCIAL MEDIA ICONS -->
+
+        <div class="social-icons">
+
+
+            <!-- WhatsApp -->
+
+            <a
+                href="https://wa.me/919999999999"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon whatsapp"
+                aria-label="WhatsApp"
+            >
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+            </a>
+
+
+
+            <!-- Instagram -->
+
+            <a
+                href="https://www.instagram.com/yourusername/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon instagram"
+                aria-label="Instagram"
+            >
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================
+         FOOTER
+    ================================== -->
+
+    <footer>
+
+        <p>
+
+            © 2026 La Botanique. All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
+
